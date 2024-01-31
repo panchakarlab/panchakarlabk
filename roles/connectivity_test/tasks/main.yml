@@ -1,0 +1,3 @@
+# Linux ubi8
+- name: Launch the connectivity test for unix ubi8  test
+  include_tasks: conn_test_unx_ubi8.yml

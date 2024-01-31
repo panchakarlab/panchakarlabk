@@ -1,0 +1,5 @@
+- name: 'connectivity_test'
+  hosts: localhost,192.168.113.105
+  gather_facts: false
+  roles:
+   - { role: ./roles/connectivity_test}

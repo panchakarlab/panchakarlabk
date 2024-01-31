@@ -1,0 +1,21 @@
+---
+dependency:
+  name: galaxy
+  options:
+    requirements-file: requirements.yml
+provisioner:
+  name: ansible
+  log: true
+  lint:
+    name: ansible-lint
+driver:
+  name: podman
+platforms:
+  - name: ubi8
+    image: registry.access.redhat.com/ubi8/ubi
+verifier:
+  name: ansible
+lint: |
+  set -e
+  yamllint .
+  ansible-lint

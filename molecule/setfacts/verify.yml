@@ -1,0 +1,11 @@
+---
+# This is an example playbook to execute Ansible tests.
+- name: Verify
+  hosts: all
+  gather_facts: true
+
+  tasks:
+     - name: 'Set report working directory'
+       set_fact:
+         report_file: "test.csv"
+     

@@ -1,0 +1,5 @@
+
+- name: "Connectivity Test ping to Target server ubi8 xaxaxaa"  
+
+- name: "Connectivity Test ping to Target server ubi8 zxxxx"
+  command: "podman exec -it ubi8 ping -c 1 -W 3 {{ Server }}" 
